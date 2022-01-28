@@ -12,6 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.composenestednavigation.navigation.Destinations
+import com.example.composenestednavigation.navigation.HOME_ROUTE
 
 @Composable
 fun RegisterScreen(
@@ -25,8 +26,8 @@ fun RegisterScreen(
         ) {
             Button(onClick = {
                 navController.popBackStack(navController.graph.startDestinationId, inclusive = true)
-                navController.graph.setStartDestination(Destinations.Home.route)
-                navController.navigate(Destinations.Home.route)
+                navController.graph.setStartDestination(HOME_ROUTE)
+                navController.navigate(HOME_ROUTE)
             }) {
                 Text(text = "Do Register")
             }

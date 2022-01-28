@@ -10,3 +10,7 @@ sealed class Destinations(
     object Home : Destinations(route = "home_screen")
     object Detail : Destinations(route = "detail_screen")
 }
+
+const val AUTH_ROUTE = "auth"
+const val HOME_ROUTE = "home"
+const val ROOT_ROUTE = "main"
