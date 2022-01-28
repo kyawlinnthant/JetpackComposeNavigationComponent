@@ -14,7 +14,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.composenestednavigation.navigation.Destinations
 
 @Composable
 fun HomeScreen(
@@ -42,7 +41,7 @@ fun HomeScreen(
             Spacer(modifier = Modifier.height(16.dp))
 
             Button(onClick = {
-                navController.navigate(Destinations.Detail.route + "/$text")
+//                navController.navigate(Destinations.Detail.route + "/$text")
             }) {
                 Text(text = "Go To Detail")
             }
