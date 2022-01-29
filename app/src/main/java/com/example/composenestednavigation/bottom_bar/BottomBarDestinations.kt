@@ -22,5 +22,4 @@ sealed class BottomBarDestinations(
         title = "Setting",
         icon = Icons.Default.Settings
     )
-
 }

@@ -15,5 +15,4 @@ fun MainScreen(
     }) {
         BottomBarNavGraph(navController = navController)
     }
-
 }
